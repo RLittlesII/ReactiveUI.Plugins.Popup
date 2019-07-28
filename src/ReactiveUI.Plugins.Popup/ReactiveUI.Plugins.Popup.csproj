@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ReactiveUI.XamForms" />
+    <PackageReference Include="Rg.Plugins.Popup" />
+    <PackageReference Include="Rocket.Surgery.Task.Extensions" />
+    <PackageReference Include="Xamarin.Forms" />
+    <PackageReference Include="Xamarin.Essentials" />
+  </ItemGroup>
+</Project>

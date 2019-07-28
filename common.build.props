@@ -1,0 +1,11 @@
+<Project>
+    <PropertyGroup>
+        <Authors>Rodney Littles, II</Authors>
+        <LangVersion>latest</LangVersion>
+        <RepositoryUrl>https://github.com/RLittlesII/ReactiveUI.Plugins.Popup</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageProjectUrl>https://github.com/RLittlesII/ReactiveUI.Plugins.Popup</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/RLittlesII/ReactiveUI.Plugins.Popup/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    </PropertyGroup>
+</Project>

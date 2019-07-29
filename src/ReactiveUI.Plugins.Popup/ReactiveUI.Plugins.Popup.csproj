@@ -7,7 +7,6 @@
   <ItemGroup>
     <PackageReference Include="ReactiveUI.XamForms" />
     <PackageReference Include="Rg.Plugins.Popup" />
-    <PackageReference Include="Rocket.Surgery.Task.Extensions" />
     <PackageReference Include="Xamarin.Forms" />
     <PackageReference Include="Xamarin.Essentials" />
   </ItemGroup>

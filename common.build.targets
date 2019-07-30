@@ -1,9 +1,8 @@
 <Project>
     <ItemGroup>
-        <PackageReference Update="ReactiveUI.XamForms" Version="9.*" />
-        <PackageReference Update="Rg.Plugins.Popup" Version="1.1.*" />
-        <PackageReference Update="Xamarin.Forms" Version="4.*" />
-        <PackageReference Update="Xamarin.Essentials" Version="1.*" />
+        <PackageReference Update="ReactiveUI.XamForms" Version="9.19.2" />
+        <PackageReference Update="Rg.Plugins.Popup" Version="1.*" />
+        <PackageReference Update="Xamarin.Forms" Version="4.0.*" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Update="coverlet.msbuild" Version="2.5.1" />

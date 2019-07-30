@@ -8,6 +8,5 @@
     <PackageReference Include="ReactiveUI.XamForms" />
     <PackageReference Include="Rg.Plugins.Popup" />
     <PackageReference Include="Xamarin.Forms" />
-    <PackageReference Include="Xamarin.Essentials" />
   </ItemGroup>
 </Project>

@@ -1,11 +1,15 @@
 <Project>
     <PropertyGroup>
+        <Owners>RLittlesII</Owners>
         <Authors>Rodney Littles, II</Authors>
+        <Copyright>Copyright (c) Rodney Littles, II</Copyright>
+        <PackageDescription>This package provides an base class for implementing Popup Pages using the Rg.Plugin.Popup package with ReactiveUI.XamForms.</PackageDescription>
         <LangVersion>latest</LangVersion>
         <RepositoryUrl>https://github.com/RLittlesII/ReactiveUI.Plugins.Popup</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageProjectUrl>https://github.com/RLittlesII/ReactiveUI.Plugins.Popup</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/RLittlesII/ReactiveUI.Plugins.Popup/blob/master/LICENSE</PackageLicenseUrl>
-        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageTags>reactiveui;xamarin.forms;popups</PackageTags>
+        <PackageReleaseNotes>https://github.com/RLittlesII/ReactiveUI.Plugins.Popup/releases</PackageReleaseNotes>
     </PropertyGroup>
 </Project>

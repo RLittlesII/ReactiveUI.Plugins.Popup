@@ -1,0 +1,6 @@
+<Project>
+    <Import Project="$([MSBuild]::GetPathOfFileAbove('common.build.props', '$(MSBuildThisFileDirectory)../'))" />
+    <PropertyGroup>
+        <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)..\analyzers.ruleset</CodeAnalysisRuleSet>
+    </PropertyGroup>
+</Project>

@@ -15,7 +15,7 @@ resources:
     - repository: rsg
       type: github
       name: RocketSurgeonsGuild/AzureDevopsTemplates
-      ref: refs/tags/v0.7.12
+      ref: refs/tags/v0.8.5
       endpoint: github
 
 variables:
@@ -31,15 +31,39 @@ variables:
   - name: DOTNET_SKIP_FIRST_TIME_EXPERIENCE
     value: "true"
   - name: CodeCovToken
-    value: '6ccc03d9-7c70-4aa1-b9d3-0ad1e242916a'
+    value: 'ed1436a4-a776-4296-87e9-fe419e291c15'
 
 jobs:
-  - template: pipeline/nuke.yml@rsg
+  - job: GitVersion
+    pool:
+      vmImage: "VS2017-Win2016"
+    steps:
+      - template: gitversion/store.yml@rsg
+        parameters:
+          NuGetVersion: "5.2.0"
+
+  - template: pipeline/nuke-job.yml@rsg
     parameters:
+      name: 'macOS'
+      dependsOn: GitVersion
+      vmImage: "macOS-10.14"
       Configuration: $(Configuration)
       Verbosity: $(Verbosity)
-      GitHub: true
-      GitHubPackages: false
-      DotNetVersion: "2.2.300"
-      DotNet3Version: "3.0.100-preview6-012264"
-      NuGetVersion: "4.7.1"
+      DotNetVersion: "2.2.301"
+      DotNet3Version: "3.0.100-preview7-012821"
+      NuGetVersion: "5.2.0"
+      
+  - job: Publish
+    pool:
+      vmImage: "windows-2019"
+    dependsOn:
+      - macOS
+    steps:
+      - download: current
+        artifact: 'Nupkg - macOS'
+      - template: standard/nuget-push.yml@rsg
+        parameters:
+          Artifacts: "$(Pipeline.Workspace)/Nupkg - macOS/"
+          NuGetVersion: "5.2.0"
+          Verbosity: $(Verbosity)
+          GitHubPackages: false

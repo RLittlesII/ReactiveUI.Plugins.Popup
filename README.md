@@ -1,12 +1,46 @@
 # ReactiveUI.Plugins.Popup
 This plugin provides an lightweight base class for implementing Popup Pages using the Rg.Plugin.Popup package with ReactiveUI.XamForms.
 
+# Status
+<!-- badges -->
+[![github-release-badge]][github-release]
+[![github-license-badge]][github-license]
+[![codecov-badge]][codecov]
+<!-- badges -->
+
+
+<!-- history badges -->
+| Azure Pipelines |
+| --------------- |
+| [![azurepipelines-badge]][azurepipelines] |
+| [![azurepipelines-history-badge]][azurepipelines-history] |
+<!-- history badges -->
+
 ### NuGet
 
-| Platform          | Package						           | NuGet                |
-| ----------------- | ---------------------------------------- | -------------------- |
-| Xamarin.Forms     | [ReactiveUI.Plugins.Popup][XamDoc]       | [![XamBadge]][Xam]   |
+<!-- nuget packages -->
+| Package | NuGet | MyGet |
+| ------- | ----- | ----- |
+| ReactiveUI.Plugins.Popup | [![nuget-version-badge]![nuget-downloads-badge]][nuget] | [![myget-version-badge]![myget-downloads-badge]][myget] |
+<!-- nuget packages -->
 
-[Xam]: https://www.nuget.org/packages/ReactiveUI.Plugins.Popup/
-[XamBadge]: https://img.shields.io/nuget/v/ReactiveUI.Plugins.Popup.svg
-[XamDoc]: https://reactiveui.net/docs/getting-started/installation/xamarin-forms
+<!-- generated references -->
+[github-release]: https://github.com/RLittlesII/ReactiveUI.Plugins.Popup/releases/latest
+[github-release-badge]: https://img.shields.io/github/release/RLittlesII/ReactiveUI.Plugins.Popup.svg?logo=github&style=flat "Latest Release"
+[github-license]: https://github.com/RLittlesII/ReactiveUI.Plugins.Popup/blob/master/LICENSE
+[github-license-badge]: https://img.shields.io/github/license/RLittlesII/ReactiveUI.Plugins.Popup.svg?style=flat "License"
+[codecov]: https://codecov.io/gh/RLittlesII/ReactiveUI.Plugins.Popup
+[codecov-badge]: https://img.shields.io/codecov/c/github/RLittlesII/ReactiveUI.Plugins.Popup.svg?color=E03997&label=codecov&logo=codecov&logoColor=E03997&style=flat "Code Coverage"
+
+[azurepipelines]: https://dev.azure.com/rlittlesii/github/_apis/build/status/ReactiveUI.Plugins.Popup?branchName=master
+[azurepipelines-badge]: https://img.shields.io/azure-devops/build/rlittlesii/github/10.svg?color=98C6FF&label=azure%20pipelines&logo=azuredevops&logoColor=98C6FF&style=flat "Azure Pipelines Status"
+[azurepipelines-history]: https://dev.azure.com/rlittlesii/github/_build/latest?definitionId=10&branchName=master
+[azurepipelines-history-badge]: https://buildstats.info/azurepipelines/chart/rlittlesii/github/10?includeBuildsFromPullRequest=false "Azure Pipelines History"
+
+[nuget]: https://www.nuget.org/packages/ReactiveUI.Plugins.Popup/
+[nuget-version-badge]: https://img.shields.io/nuget/v/ReactiveUI.Plugins.Popup.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
+[nuget-downloads-badge]: https://img.shields.io/nuget/dt/ReactiveUI.Plugins.Popup.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
+[myget]: https://www.myget.org/feed/rlittlesii/package/nuget/ReactiveUI.Plugins.Popup
+[myget-version-badge]: https://img.shields.io/myget/rlittlesii/vpre/ReactiveUI.Plugins.Popup.svg?label=myget&color=004880&logo=nuget&style=flat-square "MyGet Pre-Release Version"
+[myget-downloads-badge]: https://img.shields.io/myget/rlittlesii/dt/ReactiveUI.Plugins.Popup.svg?color=004880&logo=nuget&style=flat-square "MyGet Downloads"
+<!-- generated references -->

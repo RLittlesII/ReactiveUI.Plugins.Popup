@@ -64,6 +64,6 @@ jobs:
       - template: standard/nuget-push.yml@rsg
         parameters:
           Artifacts: "$(Pipeline.Workspace)/Nupkg - macOS/"
-          NuGetVersion: "5.2.0"
+          NuGetVersion: "5.1.0"
           Verbosity: $(Verbosity)
-          GitHubPackages: false
+          GitHubPackages: true

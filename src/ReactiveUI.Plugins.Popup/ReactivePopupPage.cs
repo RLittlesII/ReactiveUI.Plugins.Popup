@@ -36,7 +36,8 @@ namespace ReactiveUI.Plugins.Popup
         protected ReactivePopupPage()
         {
             BackgroundClick =
-                Observable.FromEventPattern(x => BackgroundClicked += x, x => BackgroundClicked -= x)
+                Observable
+                    .FromEventPattern(x => BackgroundClicked += x, x => BackgroundClicked -= x)
                     .Select(x => Unit.Default);
         }
 

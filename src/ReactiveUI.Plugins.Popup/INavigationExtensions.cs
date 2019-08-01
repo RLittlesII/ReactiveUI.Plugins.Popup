@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Reactive;
 using System.Reactive.Linq;
 using System.Text;
+using Rg.Plugins.Popup.Extensions;
 using Rg.Plugins.Popup.Pages;
 using Xamarin.Forms;
 
@@ -19,8 +20,8 @@ namespace ReactiveUI.Plugins.Popup
         /// <param name="navigation">The navigation.</param>
         /// <param name="animate">if set to <c>true</c> [animate].</param>
         /// <returns>An observable sequence to signal completion.</returns>
-        public static IObservable<Unit> PopAllPopup(this INavigation navigation, bool animate) =>
-            Observable.FromAsync(async x => await navigation.PopAllPopup(animate));
+        public static IObservable<Unit> PopAllPopup(this INavigation navigation, bool animate = true) =>
+            Observable.FromAsync(async x => await navigation.PopAllPopupAsync(animate).ConfigureAwait(false));
 
         /// <summary>
         /// Pops the <see cref="PopupPage"/> from navigation.
@@ -28,25 +29,29 @@ namespace ReactiveUI.Plugins.Popup
         /// <param name="navigation">The navigation.</param>
         /// <param name="animate">if set to <c>true</c> [animate].</param>
         /// <returns>An observable sequence to signal completion.</returns>
-        public static IObservable<Unit> PopPopup(this INavigation navigation, bool animate) =>
-            Observable.FromAsync(async x => await navigation.PopPopup(animate));
+        public static IObservable<Unit> PopPopup(this INavigation navigation, bool animate = true) =>
+            Observable.FromAsync(async x => await navigation.PopPopupAsync(animate).ConfigureAwait(false));
 
         /// <summary>
-        /// Pushes the <see cref="PopupPage"/> onto the navigation.
+        /// Pushes the <see cref="PopupPage" /> onto the navigation.
         /// </summary>
+        /// <typeparam name="T"></typeparam>
         /// <param name="navigation">The navigation.</param>
+        /// <param name="popupPage">The popup page.</param>
         /// <param name="animate">if set to <c>true</c> [animate].</param>
         /// <returns>An observable sequence to signal completion.</returns>
-        public static IObservable<Unit> PushPopup(this INavigation navigation, bool animate) =>
-            Observable.FromAsync(async x => await navigation.PushPopup(animate));
+        public static IObservable<Unit> PushPopup<T>(this INavigation navigation, T popupPage, bool animate = true)
+            where T : PopupPage => Observable.FromAsync(async x => await navigation.PushPopupAsync(popupPage, animate).ConfigureAwait(false));
 
         /// <summary>
-        /// Removes the <see cref="PopupPage"/> from the navigation.
+        /// Removes the <see cref="PopupPage" /> from the navigation.
         /// </summary>
+        /// <typeparam name="T"></typeparam>
         /// <param name="navigation">The navigation.</param>
+        /// <param name="popupPage">The popup page.</param>
         /// <param name="animate">if set to <c>true</c> [animate].</param>
         /// <returns>An observable sequence to signal completion.</returns>
-        public static IObservable<Unit> RemovePopupPage(this INavigation navigation, bool animate) =>
-            Observable.FromAsync(async x => await navigation.RemovePopupPage(animate));
+        public static IObservable<Unit> RemovePopupPage<T>(this INavigation navigation, T popupPage, bool animate = true)
+            where T : PopupPage => Observable.FromAsync(async x => await navigation.RemovePopupPageAsync(popupPage, animate).ConfigureAwait(false));
     }
 }

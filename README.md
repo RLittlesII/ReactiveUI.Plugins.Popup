@@ -1,5 +1,5 @@
 # ReactiveUI.Plugins.Popup
-This plugin provides an lightweight base class for implementing Popup Pages using the Rg.Plugin.Popup package with ReactiveUI.XamForms.
+This provides a base implementation extending [Rg.Plugins.Popup](https://www.nuget.org/packages/Rg.Plugins.Popup/) for use with ReactiveUI.XamForms.
 
 # Status
 <!-- badges -->

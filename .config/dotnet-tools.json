@@ -43,6 +43,12 @@
         "commands": [
           "dotnet-gitreleasemanager"
         ]
+      },
+      "codecov.tool": {
+        "version": "1.7.2",
+        "commands": [
+          "codecov"
+        ]
       }
     }
   }

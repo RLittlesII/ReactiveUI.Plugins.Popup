@@ -15,7 +15,7 @@ resources:
     - repository: rsg
       type: github
       name: RocketSurgeonsGuild/AzureDevopsTemplates
-      ref: refs/tags/v0.8.5
+      ref: refs/heads/feature/matrix
       endpoint: github
 
 variables:
@@ -49,9 +49,15 @@ jobs:
       vmImage: "macOS-10.14"
       Configuration: $(Configuration)
       Verbosity: $(Verbosity)
-      DotNetVersion: "2.2.301"
+      DotNetSdk:
+        - "2.2.301"
+        - "3.0.100"
       DotNet3Version: "3.0.100-preview7-012821"
       NuGetVersion: "5.2.0"
+      Matrix:
+        macOS:
+          MATRIX_NAME: "macOS"
+          IMAGE_NAME: "macOS-latest"
       
   - job: Publish
     pool:

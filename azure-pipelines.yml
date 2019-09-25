@@ -15,7 +15,7 @@ resources:
     - repository: rsg
       type: github
       name: RocketSurgeonsGuild/AzureDevopsTemplates
-      ref: refs/heads/feature/matrix
+      ref: refs/tags/v0.10.4
       endpoint: github
 
 variables:

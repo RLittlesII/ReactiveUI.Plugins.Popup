@@ -3,10 +3,11 @@ using System.Reactive;
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
+using ReactiveUI;
 using Rg.Plugins.Popup.Pages;
 using Xamarin.Forms;
 
-namespace ReactiveUI.Plugins.Popup
+namespace RxUI.Plugins.Popup
 {
     /// <summary>
     /// Base Popup page for that implements <see cref="IViewFor"/>.

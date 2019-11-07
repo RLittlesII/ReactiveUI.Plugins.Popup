@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactiveUI.Plugins.Popup", "src\ReactiveUI.Plugins.Popup\ReactiveUI.Plugins.Popup.csproj", "{481CE34B-5598-4F52-BADD-F55CD1CFE81E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RxUI.Plugins.Popup", "src\ReactiveUI.Plugins.Popup\RxUI.Plugins.Popup.csproj", "{481CE34B-5598-4F52-BADD-F55CD1CFE81E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{F7B50EFD-2E20-45EF-BCA3-0F9A1AC0D558}"
 	ProjectSection(SolutionItems) = preProject
@@ -22,7 +22,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FD3B2307-27F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{194EED6C-6C08-481A-82DA-8BB1F528BFD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = ".build", ".build\.build.csproj", "{63B4AFDF-3098-4437-B5C2-CB33AC61D36C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = ".build", ".build\.build.csproj", "{63B4AFDF-3098-4437-B5C2-CB33AC61D36C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

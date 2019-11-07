@@ -21,7 +21,7 @@
         ]
       },
       "gitversion.tool": {
-        "version": "5.0.0-beta5.40",
+        "version": "5.0.1",
         "commands": [
           "dotnet-gitversion"
         ]
@@ -33,7 +33,7 @@
         ]
       },
       "nuke.globaltool": {
-        "version": "0.21.1",
+        "version": "0.22.0",
         "commands": [
           "nuke"
         ]

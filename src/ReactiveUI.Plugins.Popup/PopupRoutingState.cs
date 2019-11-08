@@ -24,9 +24,7 @@ namespace RxUI.Plugins.Popup
 
             var navigateScheduler = RxApp.MainThreadScheduler; // TODO: Allow user to set scheduler.
 
-            var countAsBehavior = Observable.Concat(
-                Observable.Defer(() => Observable.Return(NavigationStack.Count)),
-                NavigationChanged.CountChanged().Select(_ => NavigationStack.Count));
+            var countAsBehavior = Observable.Concat(Observable.Defer(() => Observable.Return(NavigationStack.Count)),NavigationChanged.CountChanged().Select(_ => NavigationStack.Count));
 
             NavigatePopup = ReactiveCommand.CreateFromObservable<IRoutableViewModel, IRoutableViewModel>(
                 vm =>
@@ -42,14 +40,21 @@ namespace RxUI.Plugins.Popup
                 outputScheduler: navigateScheduler);
 
             NavigatePopupBack = ReactiveCommand.CreateFromObservable<Unit, Unit>(
-                () =>
+                _ =>
                 {
-                    _popupNavigationStack.RemoveAt(NavigationStack.Count - 1);
+                    _popupNavigationStack.RemoveAt(PopupNavigationStack.Count - 1);
                     return Observable.Return(Unit.Default);
                 },
                 countAsBehavior.Select(x => x > 1),
                 navigateScheduler);
         }
+
+        /// <summary>
+        /// Gets the current navigation stack, the last element in the
+        /// collection being the currently visible ViewModel.
+        /// </summary>
+        [IgnoreDataMember]
+        public ObservableCollection<IRoutableViewModel> PopupNavigationStack => _popupNavigationStack;
 
         /// <summary>
         /// Gets or sets a command that navigates to the a new element in the stack - the Execute parameter

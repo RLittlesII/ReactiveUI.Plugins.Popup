@@ -15,7 +15,7 @@ resources:
     - repository: rsg
       type: github
       name: RocketSurgeonsGuild/AzureDevopsTemplates
-      ref: refs/tags/v0.10.4
+      ref: refs/tags/v0.10.5
       endpoint: github
 
 variables:
@@ -58,6 +58,7 @@ jobs:
         macOS:
           MATRIX_NAME: "macOS"
           IMAGE_NAME: "macOS-latest"
+      EnableReleaseNotes: false
       
   - job: Publish
     pool:

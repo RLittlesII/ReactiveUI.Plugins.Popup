@@ -3,7 +3,6 @@
         <Owners>RLittlesII</Owners>
         <Authors>Rodney Littles, II</Authors>
         <Copyright>Copyright (c) Rodney Littles, II</Copyright>
-        <Copyright>© Rodney Littles, II. All rights reserved.</Copyright>
         <PackageDescription>This package provides a base class for implementing Popup Pages using the Rg.Plugins.Popup package with ReactiveUI.XamForms.</PackageDescription>
         <LangVersion>latest</LangVersion>
         <RepositoryUrl>https://github.com/RLittlesII/ReactiveUI.Plugins.Popup</RepositoryUrl>

@@ -5,7 +5,7 @@ using System.Reactive.Disposables;
 using System.Text;
 using System.Threading.Tasks;
 using ReactiveUI;
-using ReactiveUI.Plugins.Popup;
+using RxUI.Plugins.Popup;
 using ReactiveUI.XamForms;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

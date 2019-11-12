@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ReactiveUI.Plugins.Popup;
+using RxUI.Plugins.Popup;
 using Xamarin.Forms;
 
 namespace Popup

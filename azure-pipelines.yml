@@ -15,7 +15,7 @@ resources:
     - repository: rsg
       type: github
       name: RocketSurgeonsGuild/AzureDevopsTemplates
-      ref: refs/tags/v0.10.5
+      ref: refs/tags/v0.11.1
       endpoint: github
 
 variables:
@@ -34,43 +34,25 @@ variables:
     value: 'ed1436a4-a776-4296-87e9-fe419e291c15'
 
 jobs:
-  - job: GitVersion
-    pool:
-      vmImage: "VS2017-Win2016"
-    steps:
-      - template: gitversion/store.yml@rsg
-        parameters:
-          NuGetVersion: "5.2.0"
-
-  - template: pipeline/nuke-job.yml@rsg
+  - template: pipeline/nuke.yml@rsg
     parameters:
-      name: 'macOS'
-      dependsOn: GitVersion
-      vmImage: "macOS-10.14"
+      AuthNuGetFeeds:
+        - name: RocketSurgeonsGuild
+          source: https://nuget.pkg.github.com/RocketSurgeonsGuild/index.json
+          username: $(GitHub.UserName)
+          password: $(GitHub.Token)
       Configuration: $(Configuration)
       Verbosity: $(Verbosity)
+      GitHubAuthVariableGroup: rsg-bot
+      GitHub: true
+      GitHubPackages: true
       DotNetSdk:
-        - "2.2.301"
-        - "3.0.100"
-      DotNet3Version: "3.0.100-preview7-012821"
-      NuGetVersion: "5.2.0"
+        - "2.x"
+        - "3.x"
+      NuGetVersion: "5.3.0"
+      PublishNuGetPackages: 'macOS'
       Matrix:
         macOS:
-          MATRIX_NAME: "macOS"
-          IMAGE_NAME: "macOS-latest"
+          BuildName: "macOS"
+          ImageName: "macOS-latest"
       EnableReleaseNotes: false
-      
-  - job: Publish
-    pool:
-      vmImage: "windows-2019"
-    dependsOn:
-      - macOS
-    steps:
-      - download: current
-        artifact: 'Nupkg - macOS'
-      - template: standard/nuget-push.yml@rsg
-        parameters:
-          Artifacts: "$(Pipeline.Workspace)/Nupkg - macOS/"
-          NuGetVersion: "5.1.0"
-          Verbosity: $(Verbosity)
-          GitHubPackages: true

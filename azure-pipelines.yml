@@ -31,7 +31,7 @@ variables:
   - name: DOTNET_SKIP_FIRST_TIME_EXPERIENCE
     value: "true"
   - name: CodeCovToken
-    value: 'ed1436a4-a776-4296-87e9-fe419e291c15'
+    value: '951417ab-7e06-4173-862d-4b791533d2c5'
 
 jobs:
   - template: pipeline/nuke.yml@rsg

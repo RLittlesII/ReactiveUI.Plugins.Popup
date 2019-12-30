@@ -1,9 +1,9 @@
 <Project>
     <ItemGroup>
-        <PackageReference Update="System.Reactive" Version="4.3.1" />
-        <PackageReference Update="ReactiveUI.XamForms" Version="10.5.7" />
+        <PackageReference Update="System.Reactive" Version="4.*" />
+        <PackageReference Update="ReactiveUI.XamForms" Version="11.*" />
         <PackageReference Update="Rg.Plugins.Popup" Version="1.*" />
-        <PackageReference Update="Xamarin.Forms" Version="4.2.*" />
+        <PackageReference Update="Xamarin.Forms" Version="4.3.*" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Update="coverlet.msbuild" Version="2.5.1" />
@@ -11,7 +11,7 @@
         <PackageReference Update="Microsoft.NET.Test.Sdk" Version="15.9.0" />
         <PackageReference Update="Microsoft.Reactive.Testing" Version="4.0.0" />
         <PackageReference Update="NSubstitute" Version="3.1.0" />
-        <PackageReference Update="ReactiveUI.Testing" Version="10.*" />
+        <PackageReference Update="ReactiveUI.Testing" Version="11.*" />
         <PackageReference Update="xunit" Version="2.4.1" />
         <PackageReference Update="xunit.runner.visualstudio" Version="2.4.1" />
         <PackageReference Update="XunitXml.TestLogger" Version="2.1.26" />

@@ -37,9 +37,15 @@ namespace RxUI.Plugins.Popup
         protected ReactivePopupPage()
         {
             BackgroundClick =
-                Observable
-                    .FromEventPattern(x => BackgroundClicked += x, x => BackgroundClicked -= x)
-                    .Select(x => Unit.Default);
+                Observable.FromEvent<EventHandler, Unit>(
+                    handler =>
+                    {
+                        void EventHandler(object sender, EventArgs args) => handler(Unit.Default);
+                        return EventHandler;
+                    },
+                    x => BackgroundClicked += x,
+                    x => BackgroundClicked -= x)
+                    .Select(_ => Unit.Default);
         }
 
         /// <summary>

@@ -21,7 +21,7 @@ This provides a base implementation extending [Rg.Plugins.Popup](https://www.nug
 <!-- nuget packages -->
 | Package | NuGet | MyGet |
 | ------- | ----- | ----- |
-| ReactiveUI.Plugins.Popup | [![nuget-version-badge]![nuget-downloads-badge]][nuget] | [![myget-version-badge]![myget-downloads-badge]][myget] |
+| RxUI.Plugins.Popup | [![nuget-version-badge]![nuget-downloads-badge]][nuget] | [![myget-version-badge]![myget-downloads-badge]][myget] |
 <!-- nuget packages -->
 
 <!-- generated references -->
@@ -37,10 +37,10 @@ This provides a base implementation extending [Rg.Plugins.Popup](https://www.nug
 [azurepipelines-history]: https://dev.azure.com/rlittlesii/github/_build/latest?definitionId=10&branchName=master
 [azurepipelines-history-badge]: https://buildstats.info/azurepipelines/chart/rlittlesii/github/10?includeBuildsFromPullRequest=false "Azure Pipelines History"
 
-[nuget]: https://www.nuget.org/packages/ReactiveUI.Plugins.Popup/
-[nuget-version-badge]: https://img.shields.io/nuget/v/ReactiveUI.Plugins.Popup.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
-[nuget-downloads-badge]: https://img.shields.io/nuget/dt/ReactiveUI.Plugins.Popup.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
-[myget]: https://www.myget.org/feed/rlittlesii/package/nuget/ReactiveUI.Plugins.Popup
-[myget-version-badge]: https://img.shields.io/myget/rlittlesii/vpre/ReactiveUI.Plugins.Popup.svg?label=myget&color=004880&logo=nuget&style=flat-square "MyGet Pre-Release Version"
-[myget-downloads-badge]: https://img.shields.io/myget/rlittlesii/dt/ReactiveUI.Plugins.Popup.svg?color=004880&logo=nuget&style=flat-square "MyGet Downloads"
+[nuget]: https://www.nuget.org/packages/RxUI.Plugins.Popup/
+[nuget-version-badge]: https://img.shields.io/nuget/v/RxUI.Plugins.Popup.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
+[nuget-downloads-badge]: https://img.shields.io/nuget/dt/RxUI.Plugins.Popup.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
+[myget]: https://www.myget.org/feed/rlittlesii/package/nuget/RxUI.Plugins.Popup
+[myget-version-badge]: https://img.shields.io/myget/rlittlesii/vpre/RxUI.Plugins.Popup.svg?label=myget&color=004880&logo=nuget&style=flat-square "MyGet Pre-Release Version"
+[myget-downloads-badge]: https://img.shields.io/myget/rlittlesii/dt/RxUI.Plugins.Popup.svg?color=004880&logo=nuget&style=flat-square "MyGet Downloads"
 <!-- generated references -->

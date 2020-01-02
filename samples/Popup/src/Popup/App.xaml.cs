@@ -10,7 +10,8 @@ namespace Popup
         {
             InitializeComponent();
 
-            MainPage = new AppBootstrapper().CreateViewHost();
+            var appBootstrapper = new AppBootstrapper();
+            MainPage = appBootstrapper.CreateViewHost();
         }
 
         protected override void OnStart()

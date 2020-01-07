@@ -1,5 +1,5 @@
 # ReactiveUI.Plugins.Popup
-This provides a base implementation extending [Rg.Plugins.Popup](https://www.nuget.org/packages/Rg.Plugins.Popup/) for use with ReactiveUI.XamForms.
+This provides a base implementation extending [Rg.Plugins.Popup](https://www.nuget.org/packages/Rg.Plugins.Popup/) for use with [ReactiveUI.XamForms](https://www.nuget.org/packages/ReactiveUI.XamForms/).
 
 # Status
 <!-- badges -->

@@ -14,8 +14,8 @@
     <PackageReference Include="Rocket.Surgery.Nuke.DotNetCore" Version="0.5.1" />
     <PackageReference Include="GitVersion.CommandLine.DotNetCore" Version="5.0.0-beta5.51" />
     <PackageReference Include="ReportGenerator" Version="4.2.11" />
+    <PackageReference Include="Rocket.Surgery.Build.Information" Version="3.3.7" />
   </ItemGroup>
-
   <ItemGroup>
     <NukeSpecificationFiles Include="**\*.json" Exclude="bin\**;obj\**" />
     <NukeExternalFiles Include="**\*.*.ext" Exclude="bin\**;obj\**" />

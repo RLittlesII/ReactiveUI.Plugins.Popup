@@ -12,10 +12,8 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Update="System.Reactive" Version="4.*" />
-    <PackageReference Update="ReactiveUI.XamForms" Version="11.*" />
-    <PackageReference Update="Rg.Plugins.Popup" Version="2.*" />
-    <PackageReference Update="Xamarin.Forms" Version="4.5.*" />
-    <PackageReference Update="Xamarin.Essentials" Version="1.*" />
+    <PackageReference Update="ReactiveUI.Maui" Version="18.*" />
+    <PackageReference Update="Mopups" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup Condition=" $(TargetFramework.StartsWith('monoandroid'))">
     <PackageReference Update="Xamarin.Android.Support.Design" Version="28.0.0.1" />

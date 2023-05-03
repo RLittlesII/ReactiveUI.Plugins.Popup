@@ -2,10 +2,9 @@
 using System.Reactive;
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
-using System.Reactive.Subjects;
+using Mopups.Enums;
+using Mopups.Pages;
 using ReactiveUI;
-using Rg.Plugins.Popup.Pages;
-using Xamarin.Forms;
 
 namespace RxUI.Plugins.Popup
 {
@@ -19,7 +18,7 @@ namespace RxUI.Plugins.Popup
         /// <summary>
         /// The view model property.
         /// </summary>
-        public static readonly BindableProperty ViewModelProperty = BindableProperty.Create(
+        public new static readonly BindableProperty ViewModelProperty = BindableProperty.Create(
             nameof(ViewModel),
             typeof(TViewModel),
             typeof(IViewFor<TViewModel>),
@@ -44,7 +43,7 @@ namespace RxUI.Plugins.Popup
         /// <summary>
         /// Gets or sets the ViewModel to display.
         /// </summary>
-        public TViewModel ViewModel
+        public new TViewModel ViewModel
         {
             get => (TViewModel)GetValue(ViewModelProperty);
             set => SetValue(ViewModelProperty, value);
@@ -53,7 +52,7 @@ namespace RxUI.Plugins.Popup
         /// <summary>
         /// Gets the control binding disposable.
         /// </summary>
-        protected CompositeDisposable ControlBindings { get; } = new CompositeDisposable();
+        protected new CompositeDisposable ControlBindings { get; } = new CompositeDisposable();
 
         /// <inheritdoc/>
         protected override void OnBindingContextChanged()

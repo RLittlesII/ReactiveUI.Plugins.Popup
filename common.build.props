@@ -9,7 +9,7 @@
         <RepositoryType>git</RepositoryType>
         <PackageProjectUrl>https://github.com/RLittlesII/ReactiveUI.Plugins.Popup</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageTags>reactiveui;xamarin.forms;popups</PackageTags>
+        <PackageTags>reactiveui;maui;popups</PackageTags>
         <PackageReleaseNotes>https://github.com/RLittlesII/ReactiveUI.Plugins.Popup/releases</PackageReleaseNotes>
     </PropertyGroup>
 </Project>
